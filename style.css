@@ -43,6 +43,7 @@ body {
   align-items: center;
   margin-left: 1rem;
   margin-right: 1rem;
+  transition: margin 0.5s;
 }
 
 #logo {
@@ -178,8 +179,37 @@ svg {
 }
 
 
-@media(max-width:1355px){
-  #nav-content {
-    /* width: 30%; */
+@media(max-width:1240px){
+  #nav {
+    margin-left: -5%;
+    margin-right: 10%;
+  }
+}
+
+@media(max-width:500px){
+  #nav {
+    position: relative;
+    right: 12%;
+
+  }
+
+  #nav-content{
+    width: 20%;
+    margin-left: 20%;
+    display: flex;
+    gap: 1px;
+  }
+
+  #hero #text h1{
+    font-size: 4rem;
+  }
+
+  #hero {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20%;
   }
 }
