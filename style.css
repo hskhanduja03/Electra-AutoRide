@@ -140,12 +140,12 @@ h4:hover::after {
 }
 
 #hero button {
-  font-size: 17px;
   cursor: pointer;
   margin-top: 1rem;
   color: white;
   font-weight: bold;
   background: linear-gradient(to right, #b7bd4a, #43adbd);
+  font-size: 17px;
   padding: 12px 20px;
   border-radius: 5px;
   border: none;
@@ -178,38 +178,59 @@ svg {
   height: 50%;
 }
 
-
-@media(max-width:1240px){
+@media (max-width: 1240px) {
   #nav {
     margin-left: -5%;
     margin-right: 10%;
   }
 }
 
-@media(max-width:500px){
-  #nav {
-    position: relative;
-    right: 12%;
+@media (max-width: 500px) {
 
+  #nav button {
+    display: none;
   }
 
-  #nav-content{
+  #nav-content {
     width: 20%;
     margin-left: 20%;
     display: flex;
     gap: 1px;
   }
 
-  #hero #text h1{
+  #hero #text h1 {
     font-size: 4rem;
   }
 
   #hero {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20%;
+    margin-top: 30%;
+    margin-left: 15%;
+    text-align: center;
+    width: 120%;
+  }
+
+  #text h3 {
+    margin: 10%;
+    width: 120%;
+  }
+
+  #hero button {
+    font-size: 20px;
+    padding: 20px 30px;
+    margin-top: 15%;
+  }
+
+  #hero-image{
+    width: 180%;
+    margin-top: 25%;
+    margin-left: -10%;
+  }
+
+  #body{
+    overflow-x: hidden;
+  }
+
+  svg {
+    display: none;
   }
 }
