@@ -36,6 +36,13 @@ gsap.from("#hero img", {
     opacity:0
 })
 
+gsap.from("#text h3", {
+    y:"100%",
+    duration:1,
+    delay:0.5,
+    opacity:0
+})
+
 tl.from(".btn", {
     y: "0px", // Adjust the value as needed
     opacity: 0,
