@@ -29,9 +29,10 @@ tl.from("#nav .gs", {
     stagger:0.1
 })
 
-tl.from("#hero img", {
+gsap.from("#hero img", {
     scale:0.8,
     duration:1,
+    delay:0.5,
     opacity:0
 })
 
